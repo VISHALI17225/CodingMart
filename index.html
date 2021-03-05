@@ -1,0 +1,31 @@
+<form
+  id="app"
+  @submit="checkForm"
+  action="main.js"
+  method="post">
+<div>
+      <div>
+        <h2>Employee Name</h2>
+        <input type="text" v-model="eName" />
+      </div>
+      <div>
+        <h2>Role </h2>
+        <select v-model="erole" >
+        <option> Software Engineer</option>
+        <option> Software Tester</option>
+        </select>
+      </div>
+      <div>
+        <h2>Leads </h2>
+        <select v-model="eleads">
+        <option> Team -1 Lead</option>
+        <option> Team -1 Lead</option>
+        </select>
+      </div>
+
+      <div>
+        <h2>Submit</h2>
+        <input type="submit" value="Submit" v-on:click="submit" />
+      </div>
+    </div>
+	</form>
